@@ -3,8 +3,20 @@ name: Scheduled Project Quality Checks
 
 on:
   schedule:
-    # Daily at 9:53 AM IST
-    - cron: "23 4 * * *"
+    - cron: '11 10 * * 1'
+      timezone: 'Asia/Kolkata'
+    - cron: '14 11 * * 2'
+      timezone: 'Asia/Kolkata'
+    - cron: '42 9 * * 3'
+      timezone: 'Asia/Kolkata'
+    - cron: '43 11 * * 4'
+      timezone: 'Asia/Kolkata'
+    - cron: '46 10 * * 5'
+      timezone: 'Asia/Kolkata'
+    - cron: '14 10 * * 6'
+      timezone: 'Asia/Kolkata'
+    - cron: '45 11 * * 0'
+      timezone: 'Asia/Kolkata'
 
   push:
     branches: [main]
